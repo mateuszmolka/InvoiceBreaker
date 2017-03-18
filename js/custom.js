@@ -30,4 +30,16 @@ $(function(){
 		}
 	});
     
+//    Invoice number and date
+    var invoiceNumber= $('#invoice-number');
+    var invoiceDate= $('#invoice-date');
+    
+    var date=new Date();
+    var today= date.getDate()+"/"+(date.getMonth()+1)+"/"+date.getFullYear();
+    var number= "number/"+(date.getMonth()+1)+"/"+date.getFullYear();
+    
+    invoiceDate.val(today);
+    invoiceNumber.val(number);
+    
+    
 })

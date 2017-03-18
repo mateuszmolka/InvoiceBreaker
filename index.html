@@ -37,7 +37,6 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
-            <li><a class="navbar-right" href="#invoice">Create your invoice</a></li>
             <li><a href="https://github.com/mateuszmolka/InvoiceBreaker">View code on GitHub.com!</a></li>
             <li><a href="#contact">Contact me</a></li>
           </ul>
@@ -49,61 +48,82 @@
     <!--    HEADER START-->
     <div class="container-fluid" id="header">
        <div id="header-title">
-          <h1>INVOICE BREAKER</h1>
-          <p>Unlimited, free invoices</p> 
+          <h1>Create free invoice</h1>
        </div>
     </div>
     <!--    HEADER END-->
 <!-- ------------------------------------------------------------------ -->
     <!--INVOICE START-->
     <div class="" id="invoice">
-        <h2 id="invoice-title">Invoice</h2>
-        <div id="seller-data">
+        <div id="invoice-inner">
+            <h2 id="invoice-title" class="col-xs-12">Invoice</h2>
+            <div class="row right">
+               <label for="invoice-number">Invoice number:</label>
+                <input id="invoice-number" type="text" placeholder="Invoice number"><br>
+                <label for="invoice-date">Current date:</label>
+                <input id="invoice-date" type="text" placeholder="Invoice date">
+            </div>
+            <hr>
             <h3>Seller data</h3>
-            <input type="text" value="Name">
-        </div>
-        <div id="time-data">
-            <h3>Time</h3>
-        </div>
-        <div id="buyer-data">
-            <h3>Buyer data</h3>
-        </div>
-        <div id="product-table">
-            <table>
+           <div class="row">
+            <div id="seller-data-1" class="col-sm-6 col-xs-12">
+                <input type="text" value="John Kowalski" placeholder="Seller fullname">
+                <input type="text" value="MEGASYSTEMS INC" placeholder="Seller company name">
+                <input type="text" value="799 E DRAGRAM SUITE 5A" placeholder="Seller address 1">
+                <input type="text" value="TUCSON AZ 85705" placeholder="Seller address 2">
+                <input type="text" value="USA" placeholder="Seller country">
+            </div>
+            <div id="seller-data-2" class="col-sm-6 col-xs-12 right">
+                <input type="text" value="johnkowalski@gmail.com" placeholder="Seller email">
+                <input type="text" value="+48 570696156" placeholder="Seller cell phone">
+                <input type="text" value="+48 12 4158162" placeholder="Seller home phone">
+                <input type="text" value="Central Bank" placeholder="Seller bank">
+                <input type="text" value="11 2222 3333 4444 5555 6666 7777" placeholder="Seller account">
+            </div>
+           </div>
+           <hr>
+            <div id="buyer-data">
+                <h3>Buyer data</h3>
+                <div class="row">
+                <div id="buyer-data-1" class="col-sm-6 col-xs-12">
+                    <input type="text" value="Matthew Nowak" placeholder="Buyer fullname">
+                    <input type="text" value="MEGASYSTEMS INC" placeholder="Seller company name">
+                    <input type="text" value="799 E DRAGRAM SUITE 5A" placeholder="Seller address 1">
+                    <input type="text" value="TUCSON AZ 85705" placeholder="Seller address 2">
+                    <input type="text" value="USA" placeholder="Seller country">
+                </div>
+                <div id="buyer-data-2" class="col-sm-6 col-xs-12 right">
+                    <input type="text" value="johnkowalski@gmail.com" placeholder="Seller email">
+                    <input type="text" value="+48 570696156" placeholder="Seller cell phone">
+                    <input type="text" value="+48 12 4158162" placeholder="Seller home phone">
+                    <input type="text" value="Central Bank" placeholder="Seller bank">
+                    <input type="text" value="11 2222 3333 4444 5555 6666 7777" placeholder="Seller account">
+                </div>
+               </div>
+            </div>
+            <hr>
+            <h3>Products</h3>
+            <table id="product-table" style="width:100%">
               <tr>
-                <th>Company</th>
-                <th>Contact</th>
-                <th>Country</th>
+                <th style="width:10%">#</th>
+                <th style="width:40%">Description</th> 
+                <th>Quantity</th>
+                <th>Unit price($)</th>
+                <th>Total price($)</th>           
               </tr>
               <tr>
-                <td><input type="text" value="bla bla"></td>
-                <td>Maria Anders</td>
-                <td>Germany</td>
+                <td><input type="text" value="test"></td>
+                <td><input type="text" value="test"></td>
+                <td><input type="text" value="test"></td>
+                <td><input type="text" value="test"></td>
+                <td><input type="text" value="test"s></td>
               </tr>
               <tr>
-                <td>Centro comercial Moctezuma</td>
-                <td>Francisco Chang</td>
-                <td>Mexico</td>
-              </tr>
-              <tr>
-                <td>Ernst Handel</td>
-                <td>Roland Mendel</td>
-                <td>Austria</td>
-              </tr>
-              <tr>
-                <td>Island Trading</td>
-                <td>Helen Bennett</td>
-                <td>UK</td>
-              </tr>
-              <tr>
-                <td>Laughing Bacchus Winecellars</td>
-                <td>Yoshi Tannamuri</td>
-                <td>Canada</td>
-              </tr>
-              <tr>
-                <td>Magazzini Alimentari Riuniti</td>
-                <td>Giovanni Rovelli</td>
-                <td>Italy</td>
+                <td><input type="text" value="test"></td>
+                <td><input type="text" value="test"></td>
+                <td><input type="text" value="test"></td>
+                <td><input type="text" value="test"></td>
+                <td><input type="text" value="test"s></td>
               </tr>
             </table>
         </div>
