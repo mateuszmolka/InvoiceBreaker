@@ -10,6 +10,55 @@ body {
 /*GENERAL STYLES END*/
 /* ------------------------------------------------ */
 /*NAVBAR STYLES START*/
-
+.navbar{
+    margin-bottom: 0;
+}
+.navbar.scroll{
+    background-color: lightgrey;
+}
+.navbar-default .navbar-nav>li>a{
+    text-align: right;
+}
 /*NAVBAR STYLES END*/
+/* ------------------------------------------------ */
+/*HEADER STYLES START*/
+#header{
+    background-image: url(../img/graphic1.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 93vh;
+}
+#header-title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+h1{
+    margin: 0;
+}
+/*HEADER STYLES END*/
+/* ------------------------------------------------ */
+/*INVOICE STYLES START*/
+#invoice{
+    border: 1px solid black;
+    margin: 40px 80px;
+}
+#invoice-title{
+    text-align: center;
+    margin: 20px;
+}
+/*INVOICE STYLES END*/
+/* ------------------------------------------------ */
+/*CONTACT STYLES START*/
+#contact{
+    border: 1px solid black;
+    margin: 40px 80px;
+}
+#contact-title{
+    text-align: center;
+}
+/*CONTACT STYLES END*/
 /* ------------------------------------------------ */
