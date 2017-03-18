@@ -1,0 +1,53 @@
+@media all and (max-width: 1200px){
+
+}
+@media all and (max-width: 768px){
+/*    Navigation styles*/
+    #main-nav{
+        background-color: rgba(255,255,255,1);
+    }
+    .navbar-default .navbar-nav>li>a {
+		color: black;
+		text-decoration: none;
+    }
+    .navbar-default .navbar-nav>li>a:hover {
+        color: #1ac056;
+    }
+    
+/*     Navigation styles END*/
+/*   Header styles */
+    #main-header-heading{
+       font-size: 3em;
+    }
+    #second-header-heading{
+        font-size: 1.5em;
+    }
+/*   Header styles end*/
+/*    About me styles*/
+
+/*    About me styles end*/
+/*Portfolio starts*/
+/*Portfolio ends*/
+/*   Contact styles start*/
+    div#contact-container{
+        overflow: auto;
+        height: 100vh;
+    }
+
+    
+/*   Contact styles ends*/
+}
+
+@media all and (max-width: 680px){
+    /*   About me styles */
+    #main-header-heading{
+       font-size: 2.5em;
+    }
+    #second-header-heading{
+        font-size: 1.5em;
+    }
+/*   About me styles end*/
+}
+@media all and (max-width: 480px){
+    
+}
